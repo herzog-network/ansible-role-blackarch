@@ -1,0 +1,17 @@
+---
+
+- name: Run pacman -S blackarch
+  pacman:
+    name: blackarch
+    state: present
+    extra_args: --noconfirm
+  when: strapped.changed == True
+
+- name: Upgrade blackarch packages
+  pacman:
+    name: blackarch
+    state: latest
+    update_cache: yes
+  when: strapped.changed == False
+
+...

@@ -1,0 +1,24 @@
+---
+
+galaxy_info:
+  role_name: blackarch
+  namespace: herzog
+
+  author: herzog
+  company: herzog.network
+  license: N/A
+
+  description: Install and configure Blackarch on top of Arch
+
+  min_ansible_version: 2.12
+  platforms:
+    - name: Arch
+      versions:
+        - all
+
+  galaxy_tags:
+    - blackarch
+
+dependencies: []
+
+...

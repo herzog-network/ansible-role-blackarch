@@ -1,0 +1,13 @@
+---
+
+- name: Prepare arch
+  include_tasks: prepare.yaml
+  tags:
+    - blackarch
+
+- name: Install blackarch
+  include_tasks: install.yaml
+  tags:
+    - blackarch
+
+...
